@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f5f5f5;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #888;
+  }
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #141414;
+}
+
+.contain-1 {
+    display: flex;
+    align-items: center;
+    background-color: #141414;
+    height: 60px;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    padding: 20px 0;
+}
+
+
+.contain {
+    margin: 0px 70px 0px 50px;
+}
+
+
+.left-header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+
+.logo {
+    margin-right: 120px;
+    cursor: pointer;
+}
+
+.right-header {
+    margin-right: 80px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav li {
+    margin-left: 15px;
+}
+
+.header-nav li a {
+    font-size: 16px;
+    color: #F3F3F3;
+    text-decoration: none;
+}
+
+.header-nav li a:hover {
+    color: #686868;
+}
+
+.right-header {
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+.right-header a {
+    color: #fff;
+    cursor: pointer;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+.right-header a:hover {
+    color: #686868;
+}
+
+.fa-magnifying-glass,
+.fa-bell {
+    color: #fff;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.fa-magnifying-glass:hover,
+.fa-bell:hover {
+    color: #686868;
+}
+
+
+.container {
+    width: 105%;
+}
+
+#popular,
+#trend,
+#tv,
+#action,
+#originals {
+    padding-top: 60px;
+}
+
+.container h2 {
+    color: #F3F3F3;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 69px;
+    margin-bottom: 20px;
+}
+
+.container img {
+    width: 200px;
+    margin: 10px 15px 10px 0;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.container img:hover {
+    transform: scale(1.4);
+}
+
+.footer {
+    height: 250px;
+    margin: 50px 100px;
+}
+
+.icon-contain {
+    color: #686868;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.icon-contain i {
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+}
+
+.nav-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-1 a {
+    color: #686868;
+    text-decoration: none;
+    font-size: 16px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.nav-1 a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.copyright p {
+    color: #686868;
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width:975px) {
+    .logo {
+        padding: 30px 0;
+    }
+
+    .left-header {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+
+    .left-header li a {
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (max-width: 740px) {
+
+    .contain-1 {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        position: static;
+    }
+
+    .logo {
+        margin: 0;
+        padding: 15px 0;
+    }
+
+    .left-header {
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .right-header {
+        margin: 0;
+        padding: 0;
+    }
+
+    .header-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 15px 0;
+        padding: 0;
+    }
+
+    .header-nav li {
+        margin: 5px 0;
+    }
+
+    .main {
+        margin-top: 200px;
+    }
+
+    .contain {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .container h2 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card-container img {
+        width: 50%;
+    }
+
+
+    .card-container img:hover {
+        transform: scale(1.2);
+    }
+
+    .footer-nav {
+        display: block;
+        text-align: center;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+}
